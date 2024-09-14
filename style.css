@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight:  700;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+}
+.container{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+.item{
+    width: 50%;
+    background-color:white;
+}
+
+
+.child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child-item{
+    width: 50%;
+    margin-top: 30px;
+    height: 200px;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.item>h3{
+      color:hsl(179, 62%, 43%);
+      margin-left: 20px;
+      margin-top: 10px;
+      font-size: 1rem;
+}
+
+.item>h4{
+    color:hsl(71, 73%, 54%) ;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.item>p{
+    color:  hsl(203, 9%, 71%);
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 0.5rem;
+}
+
+.child-item>h3{
+    color: gray;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.child-item>h4{
+    color: beige;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    
+}
+
+.child-item>p{
+    color:   hsl(204, 43%, 93%);
+    margin-left: 14px;
+    margin-top: 10px;
+    font-size: 0.5rem;
+}
+
+.child-item>h2{
+    margin-left: 13px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+.child-item>button{
+    margin-left: 15px;
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    background-color: hsl(71, 73%, 54%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 0;
+}
+@media screen and (max-width:470px) {
+    .child{
+        gap: 0px;
+        flex-direction: column;
+    }
+    .item>p{
+        padding-bottom: 3%;
+    }
+    .child-item{
+        margin-top: 0;
+        width: 95%;
+        height: fit-content;
+        padding-bottom: 5%;
+    }
+    .child-item>p{
+        line-height: 1.6;
+    }
+
+    .item{
+        width: 65%;
+
+    }
+}
+@media screen and (max-width:800px) {
+    .child{
+        gap: 0px;
+        flex-direction: column;
+    }
+    .item>p{
+        padding-bottom: 3%;
+    }
+    .child-item{
+        margin-top: 0;
+        width: 95%;
+        height: fit-content;
+        padding-bottom: 5%;
+    }
+    .child-item>p{
+        line-height: 1.6;
+    }
+}
